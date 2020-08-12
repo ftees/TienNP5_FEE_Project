@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    
+    <title>Person</title>
+   
+    <script src="validate.js"></script>
+</head>
+<body>
+    <div class="containers">
+         <img src="banner.jpg">
+         <div class="title">
+             <h2 id="h">Visitor Information</h2>
+         </div>
+         <div class="form">
+             <form action="search.html" id="form1" method="get" onsubmit="add()">
+              <table>
+                  <tr>
+                      <td>FirstName:</td>
+                      
+                      <td><input type="text" name="first" id="first" required ></td>
+                  </tr>
+                  <tr>
+                    <td>LastName:</td>
+                   
+                    <td><input type="text" name="last" id="last" required ></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    
+                    <td><select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Telephone:</td>
+                   
+                    <td><input name="telephone" type="text" id="phone"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                   
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>You are in: </td>
+                     
+                    <td><input type="radio" name="area" value="Europe">Europe
+                        <input type="radio" name="area" value="Africa">Africa
+                        <br>
+                        <input type="radio" name="area" value="Australia">Australia
+                        <input type="radio" name="area" value="Asia">Asia
+                        <input type="radio" name="area" value="America">America
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        What are your hobbies:
+                    </td>
+                    <td>
+                      <input type="checkbox" class="checkbox" name="hobbies" value="swimming">Swimming
+                      <input type="checkbox" class="checkbox" name="hobbies" value="cooking">Cooking
+                      <input type="checkbox" class="checkbox" name="hobbies" value="shopping">Shopping
+                      <br>
+                      <input type="checkbox" class="checkbox" name="hobbies" value="sport">Sport
+                      <input type="checkbox" class="checkbox" name="hobbies" value="dancce">Dance
+                      <input type="checkbox" class="checkbox" name="hobbies" value="sing">Sing
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <textarea id="des" name="description" ></textarea>
+                    </td>
+                </tr>
+                
+              </table>
+              <input id="btn" class="btn" type="submit" value="Register">
+              
+            </form>
+         </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
